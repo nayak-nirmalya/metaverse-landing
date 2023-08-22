@@ -7,6 +7,7 @@ import { fadeIn } from '../utils/motion';
 
 const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
   <motion.div
+    onClick={() => handleClick(id)}
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative items-center justify-center ease-out-flex cursor-pointer ${
       active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
