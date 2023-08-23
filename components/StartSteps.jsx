@@ -7,6 +7,9 @@ const StartSteps = ({ number, text }) => (
     >
       <p className="font-bold text-white text-[20px]">0{number}</p>
     </div>
+    <p className="flex-1 ml-[30px] font-normal text-[18px] text-[#b0b0b0] leading-[32px]">
+      {text}
+    </p>
   </div>
 );
 
