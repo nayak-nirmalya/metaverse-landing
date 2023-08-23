@@ -14,6 +14,26 @@ const Footer = () => (
     className={`${styles.paddings} py-8 relative`}
   >
     <div className="footer-gradient" />
+    <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
+      <div className="flex items-center justify-between flex-wrap gap-5">
+        <h4 className="font-bold md:text-[64px] text-[44px] text-white">
+          Enter the Metaverse
+        </h4>
+        <button
+          type="button"
+          className="flex items-center h-fit py-4 px-6 bg-[#25618b] rounded-[32px] gap-[12px]"
+        >
+          <img
+            className="object-contain w-[24px] h-[24px]"
+            alt="headset"
+            src="/headset.svg"
+          />
+          <span className="font-normal text-[16px] text-white">
+            Enter Metaverse
+          </span>
+        </button>
+      </div>
+    </div>
   </motion.footer>
 );
 
